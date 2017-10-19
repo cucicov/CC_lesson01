@@ -52,9 +52,9 @@ void draw(){
     endShape();
   }
     if (random(1) < 0.1) {
-      inc = inc + 0.02;
+      inc = inc + 0.2;
     } else if (random(1) > 0.9) {
-      inc = inc - 0.02;
+      inc = inc - 0.2;
     }
   
 }
