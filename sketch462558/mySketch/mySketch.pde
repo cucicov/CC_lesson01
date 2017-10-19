@@ -19,7 +19,7 @@ void setup(){
 }
 
 void draw(){
-  background(100,100,100);
+  background(200,200,200);
   strokeWeight(0.5);
   translate(width/2,height/2);
   float radius = 150;
@@ -32,7 +32,7 @@ void draw(){
   b2 = incrementColor(b2, 0.6);
   
   for(float y = -radius + step/1; y <= radius - step/1; y += step){
-    float wave = abs(pow(sin(y*0.003 + frameCount*0.1),10));
+    float wave = abs(pow(sin(y*0.003 + frameCount*0.05),10));
     float wy = y - map(wave,0,1, -step,step);
     float X = sqrt(sq(radius) - sq(y))* map(wave,0,1,1,1.1);
     float cRate = map(y,radius + step/2,-radius + step/2,0,1);
@@ -52,9 +52,9 @@ void draw(){
     endShape();
   }
     if (random(1) < 0.1) {
-      inc = inc + 0.12;
+      inc = inc + 0.02;
     } else if (random(1) > 0.9) {
-      inc = inc - 0.12;
+      inc = inc - 0.02;
     }
   
 }
