@@ -1,6 +1,7 @@
 /*
 pulse circle
 @date 2017/01/17
+hi!
 */
 
   float inc = random(0.3);
